@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Code Detector</title>
+</head>
+<body>
+    <h1>Pressione uma tecla para ver o Key Code</h1>
+    <p>Key Code: <span id="key-code"></span></p>
+
+    <script>
+        document.addEventListener('keydown', function(event) {
+            const keyCode = event.keyCode || event.which;
+            const keyCodeDisplay = document.getElementById('key-code');
+
+            keyCodeDisplay.textContent = keyCode;
+            console.log('Key Code:', keyCode);
+        });
+    </script>
+</body>
+</html>
