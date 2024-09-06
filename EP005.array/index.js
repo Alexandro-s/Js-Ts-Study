@@ -29,3 +29,5 @@ sorcerer.shift();
 delete sorcerer[1]; 
 
 console.log(sorcerer);
+
+
